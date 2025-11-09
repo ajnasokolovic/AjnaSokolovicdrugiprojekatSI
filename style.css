@@ -1,0 +1,46 @@
+body {
+  background: linear-gradient(to right, #d9e7ff, #ffffff);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.naslov {
+  color: #004aad;
+}
+
+.forma {
+  background-color: #f8faff;
+  border: 1px solid #e0e7ff;
+  transition: all 0.3s ease;
+}
+
+.forma:hover {
+  box-shadow: 0 0 15px rgba(0, 90, 255, 0.2);
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  background: #f9fbff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: #004aad;
+  font-weight: 600;
+}
+
+.btn-danger {
+  background-color: #ff4d4d;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-danger:hover {
+  background-color: #e63e3e;
+}
