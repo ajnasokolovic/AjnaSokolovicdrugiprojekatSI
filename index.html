@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja Travel Bucket Lista</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🌍 Moja Travel Bucket Lista</a>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold naslov">Mjesta koja želim posjetiti</h1>
+      <p class="text-muted">Unesi zemlje i gradove koje sanjaš da vidiš, dodaj bilješke i kreiraj svoju ličnu listu putovanja ✈️</p>
+    </div>
+
+    <!-- Forma -->
+    <form id="formaDestinacije" class="p-4 bg-light rounded shadow-sm forma">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="zemlja" class="form-label">Zemlja</label>
+          <input type="text" id="zemlja" class="form-control" placeholder="npr. Japan" required>
+        </div>
+        <div class="col-md-6">
+          <label for="grad" class="form-label">Grad</label>
+          <input type="text" id="grad" class="form-control" placeholder="npr. Tokio" required>
+        </div>
+      </div>
+      <div class="mt-3">
+        <label for="napomena" class="form-label">Bilješke (opcionalno)</label>
+        <textarea id="napomena" class="form-control" rows="2" placeholder="Zašto želiš posjetiti ovo mjesto?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100 mt-4 fw-semibold">➕ Dodaj destinaciju</button>
+    </form>
+
+    <!-- Lista destinacija -->
+    <h3 class="text-center mt-5 mb-4 fw-bold">Tvoja lista destinacija</h3>
+    <div id="listaDestinacija" class="row g-4">
+      <!-- JS generiše destinacije -->
+    </div>
+  </div>
+
+  <footer class="text-center py-4 bg-primary text-white mt-5 shadow-sm">
+    <p class="m-0">Izradila: Ajna Sokolović | Treća gimnazija Sarajevo</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
