@@ -8,45 +8,46 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+  <!-- Navigacija -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">🌍 Moja Travel Bucket Lista</a>
+      <a class="navbar-brand fw-semibold" href="#">🌍 Moja Travel Bucket Lista</a>
     </div>
   </nav>
 
-  <div class="container my-5">
+  <!-- Glavni sadržaj -->
+  <div class="container py-5">
     <div class="text-center mb-5">
       <h1 class="fw-bold naslov">Mjesta koja želim posjetiti</h1>
-      <p class="text-muted">Unesi zemlje i gradove koje sanjaš da vidiš, dodaj bilješke i kreiraj svoju ličnu listu putovanja ✈️</p>
+      <p class="text-secondary lead">Kreiraj listu destinacija svojih snova. Dodaj gradove, bilješke i planiraj svoja buduća putovanja.</p>
     </div>
 
     <!-- Forma -->
-    <form id="formaDestinacije" class="p-4 bg-light rounded shadow-sm forma">
+    <form id="formaDestinacije" class="p-4 rounded shadow-sm bg-white mx-auto forma">
       <div class="row g-3">
         <div class="col-md-6">
-          <label for="zemlja" class="form-label">Zemlja</label>
+          <label for="zemlja" class="form-label fw-medium">Zemlja</label>
           <input type="text" id="zemlja" class="form-control" placeholder="npr. Japan" required>
         </div>
         <div class="col-md-6">
-          <label for="grad" class="form-label">Grad</label>
+          <label for="grad" class="form-label fw-medium">Grad</label>
           <input type="text" id="grad" class="form-control" placeholder="npr. Tokio" required>
         </div>
       </div>
       <div class="mt-3">
-        <label for="napomena" class="form-label">Bilješke (opcionalno)</label>
+        <label for="napomena" class="form-label fw-medium">Bilješke (opcionalno)</label>
         <textarea id="napomena" class="form-control" rows="2" placeholder="Zašto želiš posjetiti ovo mjesto?"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary w-100 mt-4 fw-semibold">➕ Dodaj destinaciju</button>
+      <button type="submit" class="btn dugme mt-4 w-100">Dodaj destinaciju</button>
     </form>
 
     <!-- Lista destinacija -->
-    <h3 class="text-center mt-5 mb-4 fw-bold">Tvoja lista destinacija</h3>
-    <div id="listaDestinacija" class="row g-4">
-      <!-- JS generiše destinacije -->
-    </div>
+    <h3 class="text-center mt-5 mb-4 fw-bold text-dark">Tvoja lista destinacija</h3>
+    <div id="listaDestinacija" class="row g-4"></div>
   </div>
 
-  <footer class="text-center py-4 bg-primary text-white mt-5 shadow-sm">
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 bg-dark text-white">
     <p class="m-0">Izradila: Ajna Sokolović | Treća gimnazija Sarajevo</p>
   </footer>
 
