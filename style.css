@@ -1,46 +1,77 @@
 body {
-  background: linear-gradient(to right, #d9e7ff, #ffffff);
+  background-color: #f4f6f8;
   font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
+  color: #333;
 }
 
 .naslov {
-  color: #004aad;
+  color: #007f8c;
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
 }
 
 .forma {
-  background-color: #f8faff;
-  border: 1px solid #e0e7ff;
-  transition: all 0.3s ease;
+  max-width: 700px;
+  background-color: #ffffff;
+  border: 1px solid #e5e9ec;
+  transition: all 0.3s ease-in-out;
 }
 
 .forma:hover {
-  box-shadow: 0 0 15px rgba(0, 90, 255, 0.2);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
 }
 
+input, textarea {
+  border-radius: 10px !important;
+  border: 1px solid #cfd8dc;
+}
+
+input:focus, textarea:focus {
+  border-color: #007f8c;
+  box-shadow: 0 0 5px rgba(0, 127, 140, 0.3);
+}
+
+.dugme {
+  background-color: #007f8c;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dugme:hover {
+  background-color: #005f66;
+  transform: translateY(-2px);
+}
+
+/* Kartice */
 .card {
   border: none;
   border-radius: 15px;
-  background: #f9fbff;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .card-title {
-  color: #004aad;
+  color: #007f8c;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .btn-danger {
-  background-color: #ff4d4d;
+  background-color: #ff6b6b;
   border: none;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s ease;
 }
 
 .btn-danger:hover {
-  background-color: #e63e3e;
+  background-color: #e04444;
 }
